@@ -1,0 +1,14 @@
+<ul>
+  <% @topics.each do |topic| %>
+    <li>
+    <%= topic.title %>
+    <%= link_to 'Show', topic_path(topic) %>
+    <%= link_to 'Edit', edit_topic_path(topic) %>
+    <%= link_to 'Delete', topic_path(topic), :method => :delete %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'New Topic', new_topic_path %>
+
+<%= paginate @topics %>

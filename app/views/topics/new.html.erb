@@ -1,0 +1,12 @@
+<%= form_for @topic, :url => topics_path do |f| %>
+    <%= f.label :title, "Title" %>
+    <%= f.text_field :title %>
+
+    <%= f.label :cover, "Cover" %>
+    <%= f.text_field :cover %>
+
+    <%= f.label :content, "Content" %>
+    <%= f.text_area :content %>
+
+    <%= f.submit "Create" %>
+<% end %>
