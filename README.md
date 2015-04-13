@@ -6,6 +6,7 @@ the restrful for the iOS SwiftForward
 
 ###Run
 * `bundle install`
+* `rake db:migrate`
 * `rails s`
 
 
